@@ -1,10 +1,10 @@
 from behave import given, when, then
-from features.TherapistClass import Therapist
+from task3.features.TherapistClass import Therapist
 
 
 @given('терапевт имеет базу данных диагнозов')
 def step_given_therapist_has_database(context):
-    context.therapist = Therapist(database_path="features/diagnoses.txt")
+    context.therapist = Therapist(database_path="task3/features/diagnoses.txt")
 
 
 @when('пользователь выбирает номер пациента {patient_number}')
